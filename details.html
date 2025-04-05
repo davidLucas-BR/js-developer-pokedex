@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Pokémon</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+</head>
+<body>
+    <section class="bodydetails">
+
+        
+        <h1 id="pokemon-name"></h1>
+        <img id="pokemon-image" alt="Imagem do Pokémon">
+        <p>Tipo: <span id="pokemon-type"></span></p>
+        
+        <script>
+            // Obtém o nome do Pokémon da URL
+            const params = new URLSearchParams(window.location.search);
+            const pokemonName = params.get("pokemon");
+
+
+            // Exibe o nome na página
+            document.getElementById("pokemon-name").textContent = pokemonName;
+
+
+            // Aqui você pode buscar os detalhes do Pokémon usando uma API ou um banco de dados local
+        </script>
+        
+        <div>
+            <a href="index.html">
+                <button class="backbutton" type="button">Back</button>
+            </a>
+        </div>
+
+    </section>
+</body>
+</html>

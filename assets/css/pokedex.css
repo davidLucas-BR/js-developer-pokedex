@@ -163,3 +163,20 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+.details {
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.details:hover {
+    background-color: #ffaa00;
+}
+
+.bodydetails {
+    align-items: center;
+}
